@@ -1,0 +1,43 @@
+﻿
+@model IEnumerable<Employee>
+
+@*@{
+    ViewData["Title"] = "Index";
+    var emps = (List<Employee>)ViewData["Employees"];
+}*@
+
+<h1>Index</h1>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+    </tr>
+    @foreach(var employee in Model)
+            {
+<tr>
+    <td>
+        @Html.DisplayFor(modeltem => employee.Id)
+    </td>
+    <td>
+        @Html.DisplayFor(modeltem => employee.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modeltem => employee.Phone)
+    </td>
+    <td>
+        @Html.DisplayFor(modeltem => employee.Email)
+    </td>
+</tr>
+            }
+</table>
