@@ -15,5 +15,7 @@ namespace MVCPratice.Data
         }
 
         public DbSet<MVCPratice.Models.Friend> Friend { get; set; }
+
+        public DbSet<MVCPratice.Models.Student> Student { get; set; }
     }
 }

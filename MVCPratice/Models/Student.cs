@@ -14,10 +14,15 @@ namespace MVCPratice.Models
         [Display(Name = "名字")]
         public string Name { get; set; }
 
-        [Display(Name = "連絡電話")]
-        public string Phone { get; set; }
+        [Display(Name = "國文")]
+        public int Chinese { get; set; }
 
-        [Display(Name = "電子郵件")]
-        public string Email { get; set; }
+        [Display(Name = "英文")]
+        public int English { get; set; }
+
+        [Display(Name = "數學")]
+        public int Math { get; set; }
+        [Display(Name = "總計")]
+        public int Total { get; set; }
     }
 }
