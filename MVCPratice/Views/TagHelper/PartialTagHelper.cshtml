@@ -1,0 +1,12 @@
+﻿@model IEnumerable<MVCPratice.Models.Hero.Hero>
+
+@{
+    ViewData["Title"] = "PartialTagHelper";
+
+    ViewData["Caption"] = "英雄人物";
+
+    int counter = 1;
+}
+
+
+<partial name="_HeroPartial" model="Model" view-data="ViewData" />
