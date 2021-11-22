@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using MVCPratice.Models;
+using MVCPratice.Models.HtmlHelpers;
 
 namespace MVCPratice.Data
 {
@@ -17,5 +18,7 @@ namespace MVCPratice.Data
         public DbSet<MVCPratice.Models.Friend> Friend { get; set; }
 
         public DbSet<MVCPratice.Models.Student> Student { get; set; }
+
+        public DbSet<MVCPratice.Models.HtmlHelpers.User> User { get; set; }
     }
 }
