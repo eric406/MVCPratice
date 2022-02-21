@@ -65,6 +65,7 @@ namespace MVCPratice.Controllers
             TempData["ErrorMessage"] = "發生錯誤，請聯絡系統管理人員";
             TempData["Time"] = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
             TempData["User"] = "Eric";
+            
             return RedirectToAction("ErrorMessage", "ErrorHandler");
 
         }
